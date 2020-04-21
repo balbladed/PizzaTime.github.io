@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src= "js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900|Roboto:300,300i&display=swap&subset=cyrillic" rel="stylesheet">
     <title>PizzaTime</title>
 </head>
@@ -33,10 +35,19 @@
                         <a href="#" class="header-page__link">контакты</a>
                     </li>
                 </nav>
+               <nav class="navigat" id = "nav">
+                   <li class="nav-li">
+                       <a href="">Пицца</a>
+                       <a href="">Цены</a>
+                       <a href="">Контакты</a>
+                       <a href="">Отзывы</a>
+                   </li>
+               </nav>
+                
                 <div class="phone">
                     <a href="tel:+79999999999">+38(099)08-81-88</a>
                 </div>
-                <div class="burger">
+                <div class="burger" id = "navToggle">
                     <span class="span1"></span>
                     <span class="span2"></span>
                     <span class="span3"></span>
@@ -44,6 +55,7 @@
             </div>
         </div>
     </header>
+    
 
 <!-- section-top -->
     <section class="section-top">
@@ -396,5 +408,8 @@
     <footer class="footer">
         <p>PizzaTime 2020</p>
     </footer>
+
+
+    
 </body>
 </html>
