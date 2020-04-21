@@ -1,0 +1,133 @@
+.contacts
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+.section-contacts
+{
+    padding: 100px 0 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+.section-contacts__container:before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../img/photo-1536250748881-25d8cc4a285e1.png);
+    background-size: cover;
+    height: 400px;
+    width: 680px;
+    z-index: -1;
+    bottom: 0;
+    right: -150px;
+    opacity: 1;
+}
+.section-contacts__title
+{
+    color: #1f1f1f;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contacts-start
+{
+    width: 50%;
+}
+.contacts-end
+{
+    margin-left: 25px;
+    width: 40%;
+}
+.contacts-title
+{
+    color: #1f1f1f;
+    font-family: "Montserrat",sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+.contacts-item
+{
+    margin-bottom: 50px;
+}
+.contacts-info
+{
+    color: #1f1f1f;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 300;
+}
+.social-networks
+{
+    margin-top: 10px;
+    display: flex;
+}
+.social-networks a
+{
+    margin: 5px;
+    transition: all .3s ease;
+}
+.social-networks a:hover
+{
+    transform: translateY(-10px);
+}
+.contacts-info a
+{
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width:1200px)
+{
+    iframe
+    {
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media(max-width:992px)
+{   .contacts-map
+    {
+        text-align: center;
+    }
+    .contacts-start
+    {
+        width: 100%;
+    }
+    .contacts-end
+    {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .contacts-item
+    {
+        display: block;
+        text-align: center;
+    }
+    .social-networks
+    {
+        justify-content: center;
+    }
+}
+@media(max-width:576px)
+{
+    iframe
+    {
+        width: 300px;
+        height: 350px;
+    }
+    .contacts
+    {
+        padding-left: 0;
+    }
+    .section-contacts__container:before
+    {
+        opacity: .4;
+    }
+}

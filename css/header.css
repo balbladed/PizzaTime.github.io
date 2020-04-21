@@ -1,0 +1,134 @@
+.header-page
+{
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.header-page__container
+{
+    display: flex;
+    width: 1200px;
+    padding: 5vh 10vh;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.header-page__end
+{
+    display: flex;
+}
+
+.header-page__li
+{
+    display: flex;
+}
+.header-page__li a
+{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 7.5vh;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.header-page__li a:hover
+{
+    letter-spacing: 2px;
+}
+.phone a
+{
+    text-decoration: none;
+    outline: none;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 6vh;
+    border: 3px solid white;
+    padding: 12px 18px;
+    border-radius: 100px;
+}
+.burger
+{
+    display: none;
+}
+
+@media(max-width:992px)
+{
+    .header-page__li a
+    {
+        font-size: 16px;
+        margin-left: 5vh;
+    }
+    .phone a
+    {
+        font-size: 16px;
+        margin-left: 5vh;
+        padding: 10px 16px;
+    }
+    .header-page__container
+    {
+        padding: 5vh;
+    }
+}
+
+@media(max-width:767px)
+{   .logo a img
+    {
+        padding-bottom:4px;
+    }
+    .header-page__container
+    {
+        padding: 5vh 3vh;
+    }
+    .header-page__li a
+    {
+        display: none;
+    }
+    .phone a
+    {
+        display: none;
+    }
+    .burger
+    {
+        display: block;
+        cursor:pointer;
+        
+    }
+    .burger span
+    {
+        height: 3px;
+        width: 40px;
+        margin:5px;
+        display: block;
+        background-color: white;
+    }
+    .span1,.span2,.span3
+    {
+        transition: all .5s ease;
+    }
+    .burger:hover .span1
+    {
+        transform: translateX(7px);   
+    }
+    .burger:hover .span3
+    {
+        transform: translateX(-7px); 
+    }
+    
+
+}
+@media (max-width:575px)
+{
+    .phone a
+    {
+        display: none;
+    }
+}
