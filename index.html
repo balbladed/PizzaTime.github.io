@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script src= "js/main.js"></script>
@@ -47,7 +48,7 @@
                 <div class="phone">
                     <a href="tel:+79999999999">+38(099)08-81-88</a>
                 </div>
-                <div class="burger" id = "navToggle">
+                <div class="burger" id = "navToggle" data-popup="popup-menu">
                     <span class="span1"></span>
                     <span class="span2"></span>
                     <span class="span3"></span>
@@ -409,6 +410,32 @@
         <p>PizzaTime 2020</p>
     </footer>
 
+
+    <div class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content">
+                    <button class = "btn__close popup-btn__close"></button>
+                    <nav class="navigation__mobile">
+                        <li class="nav-mob" id = "nav">
+                            <a href="">Пицца</a>
+                            <a href="">Цены</a>
+                            <a href="">Контакты</a>
+                            <a href="">Отзывы</a>
+                        </li>
+                    </nav>
+                    <div class="phone-mob">
+                        <a href="tel:+79999999999">+38(099)08-81-88</a>
+                    </div>
+                    <div class="social-networks ver2">
+                        <a href=""><img src="img/facebook.png" alt=""></a>
+                        <a href=""><img src="img/instagram.png" alt=""></a>
+                        <a href=""><img src="img/vk.png" alt=""></a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
 
     
 </body>

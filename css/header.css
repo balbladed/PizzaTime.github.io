@@ -124,6 +124,10 @@
     {
         padding: 5vh 3vh;
     }
+    .header-page
+    {
+        position: fixed;
+    }
     .header-page__li a
     {
         display: none;
